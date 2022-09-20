@@ -8,34 +8,45 @@ public class Spiral_Matric_2D {
 	}
 
 	private void Spiral_Matric_2D() {
-		int a[][ ] = new int[4][4];
+		int a[][ ] = new int[10][10];
 		int count=1;
-		int i=0;
-		int j=0;
-		
-		for(int k=0;k<a.length;k++) {
-		for(int l=k;l<a.length;l++) {
-			a[i][l]=count;
+		int rowmin=0;
+		int rowmax=a.length-1;
+		int colmin=0;
+		int colmax=a.length-1;
+		int loop = a.length*a.length;
+		//System.out.println(loop);
+		while(count<=loop) {
+			
+		for(int col=colmin;col<=colmax;col++) {
+			a[rowmin][col]=count;
 			count++;
-			j=l-1;
+			
 		}
-		for(int l=i+1;l<a.length-i;l++) {
-			a[j][l]=count;
-			//j=l;
+		for(int row=rowmin+1;row<=rowmax;row++) {
+			a[row][colmax]=count;
 			count++;
-		}i++;
-		for(int l=j;l>a[l].length-i;l--) {
-			a[j][l]=count;
+		}
+		for(int col=colmax-1;col>=colmin;col--) {
+			a[rowmax][col]=count;
 			count++;
-		}i--;
-		for(int l=j;l>a[l].length-j;l--) {
-			a[i][l]=count;
-		}j--;
+		}
+		for(int row=rowmax-1;row>=rowmin+1;row--) {
+			a[row][colmin]=count;
+			count++;
+		}
+		//System.out.println(count);
+		colmin++;
+		rowmin++;
+		colmax--;
+		rowmax--;
 	}
+		
+		
 		
 		for(int k=0;k<a.length;k++) {
 			for(int l=0;l<a[k].length;l++) {
-				System.out.print(a[k][l]+"  ");
+				System.out.print(a[k][l]+"    ");
 			}System.out.println();
 		}
 		
