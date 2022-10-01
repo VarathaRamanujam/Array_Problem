@@ -33,9 +33,77 @@ public class Basic_Array_prb {
 //		obj.Basic_Array_prb_MultipleOfTwo();             //
 //		obj.Basic_Array_prb_CommonOfTwo();              //
 //		obj.Basic_Array_prb_MergeOfTwo();              //
-		obj.Basic_Array_prb_AUB_OfTwo();              //
+//		obj.Basic_Array_prb_AUB_OfTwo();              //
+//		obj.Basic_Array_prb_avg_without_small_large();
+//		obj.Basic_Array_prb_Int_sub();
+	    obj.Basic_Array_prb_pair_of_element();
 
 	}
+
+	
+	private void Basic_Array_prb_pair_of_element() {
+		int ls_2[] = {1,2,3,4,5}; 
+		int user_given=5;
+		for(int i=0;i<ls_2.length;i++) {
+			for(int j=i+1;j<ls_2.length;j++)
+			 if(ls_2[i]+ls_2[j]==user_given ) {
+			   System.out.println("pairs are : "+ls_2[i]+","+ls_2[j]);
+
+		}
+		}
+		
+	}
+
+
+	private void Basic_Array_prb_Int_sub() {
+		int ls_2[] = {4,-5,12,-9,4,2,-2,4,12};
+		int ls[] = new int[ls_2.length];
+		int j=0;
+		for(int i=0;i<ls.length;i++) {
+			if(ls_2[i]>0) {
+				ls[j]=ls_2[i];
+			j++;}
+//			else
+//				ls[i]=ls_2[i];
+		}
+		for(int i=0;i<ls.length;i++) {
+			if(ls_2[i]<=0) {
+				ls[j]=ls_2[i];
+			j++;}
+//			else
+//				ls[i]=ls_2[i];
+		}
+		for(int i=0;i<ls.length;i++)
+			System.out.println(ls[i]);
+	
+	}
+
+
+	private void Basic_Array_prb_avg_without_small_large() {
+		int ls_2[] = {4,5,12,9,4,2,2,4,12};
+		 int min=0;
+
+			for(int i=0;i<ls.length;i++) {
+		         min=i;
+			     for(int j=i+1;j<ls.length;j++) {
+				
+				   if(  ls[min]>ls[j] ) {
+					   int temp=ls[j];
+					   ls[j]= ls[min];
+					   ls[min]=temp;			 
+				}  
+				}
+			}
+			int avg =0;
+			int count=0;
+			for(int i=1;i<ls_2.length-1;i++) {
+				avg+=ls_2[i];
+				count++;
+			}
+			avg=avg/count;
+			System.out.println(avg);
+	}
+
 
 	private void Basic_Array_prb_AUB_OfTwo() {
 		int ls_1[] = {4,5,2,56,3};
