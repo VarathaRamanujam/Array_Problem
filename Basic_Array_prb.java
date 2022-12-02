@@ -35,15 +35,15 @@ public class Basic_Array_prb {
 //		obj.Basic_Array_prb_MergeOfTwo();              //
 //		obj.Basic_Array_prb_AUB_OfTwo();              //
 //		obj.Basic_Array_prb_avg_without_small_large();
-//		obj.Basic_Array_prb_Int_sub();
-	    obj.Basic_Array_prb_pair_of_element();
+		obj.Basic_Array_prb_Int_sub();
+//	    obj.Basic_Array_prb_pair_of_element();
 
 	}
 
 	
 	private void Basic_Array_prb_pair_of_element() {
 		int ls_2[] = {1,2,3,4,5}; 
-		int user_given=5;
+		int user_given=9;
 		for(int i=0;i<ls_2.length;i++) {
 			for(int j=i+1;j<ls_2.length;j++)
 			 if(ls_2[i]+ls_2[j]==user_given ) {

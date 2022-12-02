@@ -30,9 +30,7 @@ public class Array_Solved_UsingFormula {
 		int principle=10000; // initial amount 
 		int rate_of_interest=8;
 		int time=1;  // no. of years
-		System.out.println("Simple Interest : "+((principle*rate_of_interest*time)/100));
-		
-		   
+		System.out.println("Simple Interest : "+((principle*rate_of_interest*time)/100));	   
 	}
 
 
@@ -74,5 +72,4 @@ public class Array_Solved_UsingFormula {
 //			System.out.println(ls[i]);
 		
 	}
-
 }

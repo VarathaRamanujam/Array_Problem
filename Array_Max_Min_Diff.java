@@ -3,7 +3,6 @@ package Arrays;
 import java.util.List;
 
 public class Array_Max_Min_Diff {
-
 	public static void main(String[] args) {
 		Array_Max_Min_Diff obj = new Array_Max_Min_Diff();
 		obj.Array_Max_Min();
@@ -48,5 +47,4 @@ public class Array_Max_Min_Diff {
 	System.out.println("Max "+list[ls.length-1]);
 	System.out.println("Difference "+ Diff);	
 	}
-
 }
