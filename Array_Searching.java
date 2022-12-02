@@ -14,10 +14,6 @@ public class Array_Searching {
 		
 	}
 
-	
-	
-	
-	
 	private void Array_Searching() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Array length : ");

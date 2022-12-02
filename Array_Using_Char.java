@@ -1,19 +1,35 @@
 package Arrays;
 
 public class Array_Using_Char {
-
 	public static void main(String[] args) {
 		Array_Using_Char obj = new Array_Using_Char();
-//		obj.Array_Using_Char_1();
-//		obj.Array_Using_Char_2();
-//		obj.Array_Using_Char_3();
-//		obj.Array_Using_Char_4();///ACEGI.....
-		obj.Array_Using_Char_5();///ADFIKNP
+//		obj.Array_Using_Char_1();// AMVZY--->amvzy
+//		obj.Array_Using_Char_2();// AMVZY ---->bnwaz
+//		obj.Array_Using_Char_3();// AMVZY ----->DOYBB
+//		obj.Array_Using_Char_4();// ACEGI.....
+		obj.Array_Using_Char_5();// ADFIKNP.....
+//		obj.Array_Using_Char_6();// Traverse....
+
 
 	}
 
+	private void Array_Using_Char_6() {
+	
+		char ls[] = {'A','M','V','Z','Y'};
+		for(int j=0;j<3;j++) {
+		int temp =ls[0];
+		
+		for(int i=0;i<ls.length-1;i++) {
+			ls[i]=ls[i+1];
+		}ls[ls.length-1]=(char) temp;
+		}
+		for(int i=0;i<ls.length;i++) {
+			System.out.print(ls[i]+" ");
+		}
+	}
+
 	private void Array_Using_Char_5() {
-		char ls[]=new char[19];
+		char ls[]=new char[30];
 		int first ='A';
 		int second='D';
 		int diff =0;
@@ -45,18 +61,6 @@ public class Array_Using_Char {
 				second=diff+first;
 			}
 		}
-//			if(first>=90) {
-//				first = second -28;			
-//				ls[i]=(char)first;
-//				second=first+2 ;
-//				first=second;
-//				second=first+2;
-//			}else {
-//			diff=second-first;
-//			ls[i]=(char) first;
-//			first=second;
-//			second=diff+first;
-//			}
 			for(int i=0;i<ls.length;i++) {
 				System.out.print(ls[i]+" ");
 			}

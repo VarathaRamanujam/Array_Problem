@@ -1,5 +1,7 @@
 package Arrays;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 public class Array_Basic_Max_Min {
 
 	public static void main(String[] args) {
@@ -7,9 +9,46 @@ public class Array_Basic_Max_Min {
 		//obj.Array_Basic_Max();
 		//obj.Array_Basic_Min();
 		//obj.Array_Basic_Avg();
-		obj.Array_Basic_Max_char();
-		obj.Array_Basic_Min_char();
+//		obj.Array_Basic_Max_char();
+//		obj.Array_Basic_Min_char();
+		obj.Hacker_Max_Min();
 	}
+
+	private void Hacker_Max_Min() {
+		List arr = new ArrayList();
+		arr.add(256741038);
+		arr.add(623958417);
+		arr.add(467905213);
+		arr.add(714532089);
+		arr.add(938071625);
+		System.out.println(arr.get(0));
+		
+		  Long ls[] = new Long[arr.size()];   
+		    for(int i=0;i<arr.size();i++){
+		        long sum=0;
+		        for(int j=0;j<arr.size();j++){
+		            if(i!=j)
+		             sum=sum+(int)arr.get(j);
+		        }ls[i]=sum;
+		    }
+		   
+		 //   2744467344
+		   for(int i=0;i<ls.length;i++){
+		       for(int j=0;j<ls.length;j++){  
+		            if(ls[i]<ls[j]  && i!=j){
+		              Long temp =ls[i];
+		              ls[i]=ls[j];
+		              ls[j]=temp;
+		           }
+		       }
+		   }
+		    //   for(int i=0;i<ls.length;i++)
+		    // System.out.println(ls[i]);
+		    
+		     System.out.println(ls[0]+" "+ls[ls.length-1]);
+		    
+		    }
+	
 
 	private void Array_Basic_Min_char() {
 		char ls[]= {'A','X','O','E','I'};

@@ -9,6 +9,7 @@ public class Sorting_Arrays {
 //		obj.Reverse_Printing();
 //		obj.Sorting_Arrays_Asending_char();
 //		obj.Sorting_Arrays_Desending_char();
+		
 		obj.Sorting_Arrays_Insertion();
 		obj.Sorting_Arrays_Bubble();
 		obj.Sorting_Arrays_Selection();
@@ -16,11 +17,11 @@ public class Sorting_Arrays {
 
 private void Sorting_Arrays_Selection() {
 	int ls[]= {6,5,6,74,45,3,45,5,42,78,1,0};
-    int ls_1[]=new int [ls.length];
+    //int ls_1[]=new int [ls.length];
     int min=0;
 
 	for(int i=0;i<ls.length;i++) {
-       min=i;
+         min=i;
 	     for(int j=i+1;j<ls.length;j++) {
 		
 		   if(  ls[min]>ls[j] ) {
@@ -134,7 +135,7 @@ System.out.println();
 }
 	
 
-	private void Sorting_Arrays_Bubble() {
+private void Sorting_Arrays_Bubble() {
 		int ls[] = {45,57,64,7,8,899,54,10,1,3,01};
 		
 		int temp=0;
