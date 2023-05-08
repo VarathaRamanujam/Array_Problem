@@ -1,6 +1,6 @@
 package Arrays;
 
-public class Anagram_Array_HAcker_Ranker {
+public class Anagram_Array_HAcker_Ranker { 
 static int a=12;
 	public static void main(String[] args) {
 		Anagram_Array_HAcker_Ranker obj = new Anagram_Array_HAcker_Ranker();
